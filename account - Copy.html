@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awespme/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/styleToolTip.css">
+
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+    <!---------- account - page -------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!---- contact us ----->
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.7111203570344!2d77.96426167531327!3d30.415936974738674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1682103548296!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <!--<h5>Ansal Basera, Villa No. 44</h5>-->
+                            <p>Katni, Madhya Pradesh, India</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5> +91 7999950596</h5>
+                            <p>Monday to Saturday, 10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>zikaa2910@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact-col">
+                
+                    <div class="contact-container">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                            <div class="contact-left-title">
+                                <h2>Get in touch</h2>
+                                <hr>
+                            </div>
+                            <input type="hidden" name="access_key" value="0b77e763-8dd6-4fd2-9df5-3b9f7902ce8c">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                            <button type="submit" class="hero-btn red-btn">Submit <img src="assets/arrow_icon.png" alt=""></button>
+                        </form>
+                        <div class="contact-right">
+                            <img src="assets/right_img.png" alt="">
+                        </div>
+                    </div>
+                
+                <!--
+                    <form action="form-handler.php"; method="post"; onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" name="name" placeholder="Enter your name"required>
+                        <input type="email" name="email" placeholder="Enter Email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                -->
+                </div>     
+            </div>
+        </section>
+        
+        <!-- Footer -->
+
+        <section class="footer">
+            <h3>About Us</h3>
+            <p>We are the team of CO-DES which worked for this project since 15,January 2023. Our main goal was for student to get the proper<br>guidance for every student to achieve for in their life. For this, we were motivated by our family who still at this age tries to achieve a better<br>world by searching for new opportunities that they may gain from this world.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram">
+                    <a href="https://www.instagram.com/__.zikaa2_._"></a>
+                </i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-star-o"></i> by CO-DES Team <i class="fa fa-star-o"></i></p>
+        </section>
+
+        <!-- CHAT BAR BLOCK -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!------- footer ------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>
+                            <a href="https://www.instagram.com/__.zikaa2_._">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        
+                        </li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Ashtosh Agarwal</p>
+        </div>
+    </div>
+
+    <!--------- js for toggle menu ------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-------- js for toggle Form ------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+<!-------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        vavLinks.style.right = "0";
+    }
+    function hideMenu(){
+        vavLinks.style.right = "-200px";
+    }
+    
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+</body>
+</html>
